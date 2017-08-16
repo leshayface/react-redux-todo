@@ -1,4 +1,4 @@
-import {combinedReducers} from 'redux';
+import {combineReducers} from 'redux';
 
 const tasksReducer = (state = [], action) => {
   switch (action.type) {
@@ -12,7 +12,7 @@ const tasksReducer = (state = [], action) => {
   }
   return state;
 },
-reducers = combinedReducers ({
+reducers = combineReducers ({
   tasks:tasksReducer
 });
 
